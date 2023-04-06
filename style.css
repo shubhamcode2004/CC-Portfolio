@@ -1,0 +1,285 @@
+/* ************* Import ************* */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Golos+Text&family=PT+Serif:ital@0;1&family=Source+Sans+Pro&display=swap');
+
+/* ************* Whole Page ************* */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ************* Navbar ************* */
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+.navbar {
+    background: #7286D3;
+    color: black;
+}
+
+.menu {
+    border: 2px solid black;
+    border-radius: 36px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Alkatra', cursive;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 1vh;
+    right: 4vw;
+    font-size: 60px;
+}
+
+/* ************* Home ************* */
+
+#home {
+    background: url(Resources/BG-Quote.png), whitesmoke;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 120px;
+}
+
+.home img {
+    height: 80vh;
+    border-radius: 100%;
+    padding: 60px 0px;
+}
+
+
+.resume {
+    text-decoration: none;
+    color: red;
+    transition: ease-in-out 0.2s;
+}
+
+.resume:hover {
+    font-size: 50px;
+    transition: ease-in-out 0.2s;
+}
+
+/* ************* About ************* */
+
+#about {
+    background: rgb(226, 226, 226);
+    font-family: 'Golos Text', sans-serif;
+}
+
+.about .container {
+    padding: 60px 0px;
+}
+
+.about .container .container a {
+    padding-right: 12px;
+}
+
+/* ************* Education ************* */
+
+#education {
+    background: whitesmoke;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.education .container {
+    padding: 60px 0px;
+}
+
+/* ************* Skills ************* */
+
+#skills {
+    background: rgb(226, 226, 226);
+    font-family: 'Golos Text', sans-serif;
+}
+
+.skills .container {
+    padding: 60px 0px;
+}
+
+/* ************* Contact ************* */
+
+#contact {
+    background: whitesmoke;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.contact .container {
+    padding: 60px 0px;
+}
+
+#conatct {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feedback {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 40px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.form-group {
+    width: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+    background: whitesmoke;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(0, 162, 255);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+    border: 1px solid black;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(223, 240, 255);
+}
+
+form h2 {
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding: 4px 0px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* ************* Footer ************* */
+
+footer {
+    background: #7286D3;
+    color: black;
+    font-weight: 100;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ************* Media Queries ************* */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home {
+        display: inline;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 120px;
+    }
+
+    .home .container {
+        padding: 40px 0px;
+    }
+
+    .home img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60vh;
+    }
+
+    #home {
+        background: url(Resources/BG-Quote.png), whitesmoke;
+        background-size: 100vw;
+    }
+
+    .about .container {
+        text-align: center;
+    }
+
+    .home img {
+        height: 56vh;
+        border-radius: 30%;
+        padding: 60px 0px;
+    }
+}
+
+/* ************* Testing ************* */
